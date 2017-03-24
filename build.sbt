@@ -8,9 +8,7 @@ organization := "org.nomadblacky"
 
 version := "0.1.0"
 
-scalaVersion := "2.12.0"
-
-crossScalaVersions := Seq("2.11.8", "2.12.0")
+scalaVersion := "2.11.8"
 
 resolvers ++= Seq(
   "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
@@ -62,3 +60,5 @@ ScalariformKeys.preferences := ScalariformKeys.preferences.value
   .setPreference(AlignSingleLineCaseStatements, true)
   .setPreference(DoubleIndentClassDeclaration, true)
   .setPreference(RewriteArrowSymbols, true)
+
+enablePlugins(ScalaNativePlugin)
